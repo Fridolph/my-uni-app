@@ -1,6 +1,6 @@
 <template>
   <view>
-    new uni page
+    hobby page
     <view>{{ str }}</view>
   </view>
 </template>

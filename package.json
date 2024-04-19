@@ -1,6 +1,22 @@
 {
-  "name": "uniapp-vue3-ts-scaffold",
-  "version": "0.0.0",
+  "name": "my-uni-app",
+  "author": "fridolph",
+  "version": "1.0.0",
+  "uni-app": {
+    "scripts": {
+      "custom-platform": {
+        "title": "我的uniapp应用",
+        "browser": "",
+        "env": {
+          "UNI_PLATFORM": "mp-weixin",
+          "MY_TEST": "FRIDOLPH"
+        },
+        "define": {
+          "CUSTOM-CONST": true
+        }
+      }
+    }
+  },
   "scripts": {
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",

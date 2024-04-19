@@ -4,27 +4,27 @@
     <view class="text-area">
       <text class="title">{{ title }}</text>
       <!-- 直接从 store 中访问 state -->
-      <text>Current Count: {{ counter.count }}</text>
+      <text>Current Count: {{ count }}</text>
     </view>
-    <view class="flex justify-center items-center w-full h-[2rpx] bg-blue-300">
+    <view class="flex justify-center items-center w-full h-[200rpx] bg-blue-300">
       <text>Hello Tailwind CSS</text>
     </view>
     <view>
-      <uv-button type="primary" text="uv-ui按钮" @click="add">add</uv-button>
+      <uv-button type="primary" text="uv-ui按钮" @click="increment">add</uv-button>
     </view>
   </view>
+
+  <FixedTabbar />
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import { useCounterStore } from '@/stores/counter'
+import { ref, toRefs } from 'vue'
+import { useCounterStore } from '../../stores/counter'
 
 const title = ref('Hello')
-const counter = useCounterStore()
-
-function add() {
-  counter.increment()
-}
+const store = useCounterStore()
+const { count } = toRefs(store)
+const { increment } = store
 </script>
 
 <style scoped lang="postcss">
