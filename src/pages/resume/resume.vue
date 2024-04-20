@@ -11,11 +11,9 @@
 
       <Aside>
         <Avatar />
-        <!-- <view class="scrollbar overflow-x-hidden overflow-y-auto pr-[12px] hover:pr-[6px]">
-          <Baseinfo />
-          <Contact />
-          <Hobby />
-        </view> -->
+        <Baseinfo />
+        <!-- <Contact /> -->
+        <!-- <Hobby /> -->
       </Aside>
 
       <!-- <Main>
@@ -35,8 +33,7 @@
 // import ThemeChange from './components/PageTool/ThemeChange/ThemeChange.vue'
 // ----------------------------------------------
 import Avatar from './views/1avatar.vue'
-// import Aside from './components/Layouts/Aside.vue'
-// import Baseinfo from './views/Baseinfo/Baseinfo.vue'
+import Baseinfo from './views/2baseinfo.vue'
 // import Contact from './views/Contact/Contact.vue'
 // import Hobby from './views/Hobby/Hobby.vue'
 // -------------------------------------------
@@ -47,9 +44,9 @@ import Avatar from './views/1avatar.vue'
 // import Personal from './views/Personal/Personal.vue'
 // import Thanks from './views/Thanks/Thanks.vue'
 
-import { ref } from 'vue'
+// import { ref } from 'vue'
 
-const str = ref<string>('hello uni-app')
+// const str = ref<string>('hello uni-app')
 </script>
 
 <style scoped></style>

@@ -16,6 +16,6 @@
     "lib": ["esnext", "dom"],
     "types": ["@dcloudio/types"]
   },
-  "exclude": ["node_modules", "unpackage", "src/**/*.nvue"],
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules", "unpackage", "src/**/*.nvue"]
 }
