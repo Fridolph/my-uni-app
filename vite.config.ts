@@ -5,6 +5,11 @@ import uvtw from '@uni-helper/vite-plugin-uni-tailwind'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': '/src'
+    }
+  },
   css: {
     postcss: postcssConfig,
   },
@@ -13,13 +18,14 @@ export default defineConfig({
   // define: {
   //   'process.env.VUE_APP_TEST': JSON.stringify('dev'),
   // },
+
   // 发布时删除 console
-  build: {
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-      },
-    },
-  },
+  // build: {
+  //   minify: 'terser',
+  //   terserOptions: {
+  //     compress: {
+  //       drop_console: true,
+  //     },
+  //   },
+  // },
 })

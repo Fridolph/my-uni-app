@@ -1,6 +1,6 @@
 <template>
   <view>
-    resume page
+    demo page
     <view>{{ str }}</view>
   </view>
 </template>
@@ -11,6 +11,4 @@ import { ref } from 'vue'
 const str = ref<string>('hello uni-app')
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

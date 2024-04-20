@@ -13,8 +13,6 @@
       <uv-button type="primary" text="uv-ui按钮" @click="increment">add</uv-button>
     </view>
   </view>
-
-  <FixedTabbar />
 </template>
 
 <script setup lang="ts">

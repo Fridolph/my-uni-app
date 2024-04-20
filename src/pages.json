@@ -2,36 +2,74 @@
   "pages": [
     //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
     {
-      "path": "pages/home/index",
+      "path": "pages/home/home",
       "style": {
         "navigationBarTitleText": "我的主页"
       }
     },
     {
-      "path": "pages/uv/index",
+      "path": "pages/uv/uv",
       "style": {
-        "navigationBarTitleText": "学习UVui"
+        "navigationBarTitleText": "学习 uv-ui"
       }
     },
     {
-      "path": "pages/demo/index",
+      "path": "pages/demo/demo",
       "style": {
-        "navigationBarTitleText": "项目练手"
+        "navigationBarTitleText": "实战Demo"
       }
     },
     {
-      "path": "pages/hobby/index",
+      "path": "pages/hobby/hobby",
       "style": {
         "navigationBarTitleText": "兴趣爱好"
       }
     },
     {
-      "path": "pages/resume/index",
+      "path": "pages/resume/resume",
       "style": {
         "navigationBarTitleText": "我的简历"
       }
     }
   ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#0889cd",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/icon/home.png",
+        "selectedIconPath": "static/icon/home-s.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/uv/uv",
+        "iconPath": "static/icon/book.png",
+        "selectedIconPath": "static/icon/book-s.png",
+        "text": "UVui"
+      },
+      {
+        "pagePath": "pages/demo/demo",
+        "iconPath": "static/icon/demo.png",
+        "selectedIconPath": "static/icon/demo-s.png",
+        "text": "Demo"
+      },
+      {
+        "pagePath": "pages/hobby/hobby",
+        "iconPath": "static/icon/hobby.png",
+        "selectedIconPath": "static/icon/hobby-s.png",
+        "text": "兴趣"
+      },
+      {
+        "pagePath": "pages/resume/resume",
+        "iconPath": "static/icon/resume.png",
+        "selectedIconPath": "static/icon/resume-s.png",
+        "text": "简历"
+      },
+    ]
+  },
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
