@@ -1,9 +1,1 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
-  .keyword {
-    @apply text-primary;
-  }
-}
+@import '../pages/resume-detail/styles/common.css';

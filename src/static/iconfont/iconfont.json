@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "796471",
+      "name": "教育",
+      "font_class": "jiaoyu",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "1273958",
+      "name": "基于开源技术搭建",
+      "font_class": "jiyukaiyuanjishudajian",
+      "unicode": "e71e",
+      "unicode_decimal": 59166
+    },
+    {
+      "icon_id": "1845882",
+      "name": "拾到感谢",
+      "font_class": "shidaoganxie",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "10702496",
+      "name": "专业",
+      "font_class": "zhuanye",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "13504065",
+      "name": "履历",
+      "font_class": "lvli",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "26851708",
+      "name": "项目管理",
+      "font_class": "xiangmuguanli",
+      "unicode": "ea41",
+      "unicode_decimal": 59969
+    },
+    {
       "icon_id": "1131",
       "name": "资料库",
       "font_class": "ziliaoku",
