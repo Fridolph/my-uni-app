@@ -3,5 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-
+  .keyword {
+    @apply text-primary;
+  }
 }
