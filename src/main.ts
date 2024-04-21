@@ -4,6 +4,7 @@ import * as Pinia from 'pinia'
 import './styles/index.css'
 // 引入业务组件
 import FixedTabbar from './components/fixed-tabbar/fixed-tabbar.vue'
+import Iconfont from './components/iconfont/iconfont.vue'
 
 export function createApp() {
   const app = createSSRApp(App)
@@ -11,6 +12,7 @@ export function createApp() {
 
   // 注册业务组件
   app.component('FixedTabbar', FixedTabbar)
+  app.component('Iconfont', Iconfont)
 
   return {
     app,

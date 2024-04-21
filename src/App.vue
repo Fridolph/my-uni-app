@@ -10,6 +10,13 @@ onHide(() => {
   console.log('App Hide')
 })
 </script>
+
 <style>
-@import url('styles/tailwind.css');
+@import url('styles/index.css');
+
+#app {
+  overflow: hidden;
+  overflow-y: auto;
+  width: 100vw;
+}
 </style>

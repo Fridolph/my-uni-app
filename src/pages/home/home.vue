@@ -1,6 +1,6 @@
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png" />
+    <image class="logo" src="/static/logo.jpg" />
     <view class="text-area">
       <text class="title">{{ title }}</text>
       <!-- 直接从 store 中访问 state -->
