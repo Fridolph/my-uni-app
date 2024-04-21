@@ -1,8 +1,8 @@
-# uniapp-vue3-ts-scaffold
+### 一、介绍
 
-#### 一、介绍
+本项目是使用 uniapp-vue3-ts-scaffold 脚手架搭建。
 
-本项目是一个uni-app + Vue3 + Typescript + Pinia + Vite + Tailwind CSS + uv-ui开发脚手架，下载本项目后可快速开始界面开发，无须再进行复杂繁琐的配置。
+uni-app + Vue3 + Typescript + Pinia + Vite + Tailwind CSS + uv-ui开发脚手架，下载本项目后可快速开始界面开发，无须再进行复杂繁琐的配置。
 
 #### 二、技术栈简介
 
