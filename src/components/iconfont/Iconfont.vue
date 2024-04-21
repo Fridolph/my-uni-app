@@ -1,8 +1,7 @@
 <template>
   <text
-    v-bind="$attrs"
-    :class="`iconfont icon-${name} align-middle`"
-    :style="`font-size: ${size}px; color: ${color}`"></text>
+    :class="`iconfont icon-${name} inline-block align-middle`"
+    :style="`font-size: ${size}px; color: ${color}`" />
 </template>
 
 <script setup lang="ts">

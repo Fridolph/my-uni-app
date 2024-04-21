@@ -1,11 +1,23 @@
 <template>
   <view class="w-full flex justify-center items-center mx-auto mt-5 flex-col">
-    <view class="relative rounded-full w-[375rpx] pb-[375rpx] overflow-hidden ring-2">
+    <!-- <view class="relative rounded-full w-[300rpx] pb-[300rpx] overflow-hidden ring-2">
       <image
         class="absolute left-1/2 -translate-x-1/2 w-full h-full"
         src="/static/resume/avatar.jpg"
       />
-    </view>
+    </view> -->
+    <uv-image
+      class="ring-2"
+      src="/static/resume/avatar.jpg"
+      width="300rpx"
+      height="300rpx"
+      shape="circle"
+      :lazy-load="true"
+    >
+      <template v-slot:loading>
+        <uv-loading-icon color="gray"></uv-loading-icon>
+      </template>
+    </uv-image>
   </view>
   <view class="my-[40rpx] text-center">
     <view
