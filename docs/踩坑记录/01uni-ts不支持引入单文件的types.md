@@ -109,4 +109,3 @@ withDefaults(defineProps<IRowContent>(), {
 ```
 
 
-# uni 写 tailwind时 不支持 写 *__ 这种，小程序不兼容
