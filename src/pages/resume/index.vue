@@ -13,8 +13,6 @@
 </template>
 
 <script setup lang="ts">
-import Avatar from './views/1avatar.vue'
-
 function toDetail() {
   uni.navigateTo({
     url: '/pages/resume-detail/index?id=1&name=uniapp',

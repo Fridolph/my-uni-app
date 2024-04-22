@@ -2,7 +2,8 @@ import { createSSRApp } from 'vue'
 import App from './App.vue'
 import * as Pinia from 'pinia'
 import './styles/index.css'
-// 引入业务组件
+// 引入公共 或 业务组件
+import Avatar from './components/avatar.vue'
 import FixedTabbar from './components/fixed-tabbar/fixed-tabbar.vue'
 import Iconfont from './components/iconfont/iconfont.vue'
 
@@ -11,6 +12,7 @@ export function createApp() {
   app.use(Pinia.createPinia())
 
   // 注册业务组件
+  app.component('Avatar', Avatar)
   app.component('FixedTabbar', FixedTabbar)
   app.component('Iconfont', Iconfont)
 
