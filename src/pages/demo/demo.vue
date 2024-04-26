@@ -1,5 +1,5 @@
 <template>
-  <view class="w-full min-h-screen dark:bg-[var(--dark-page-bg)] dark-transition">
+  <view class="w-full min-h-[100vh-88rpx] dark:bg-[var(--dark-page-bg)] dark-transition">
     <view
       class="relative sm:w-full md:w-full max-w-[1600px] flex flex-col md:flex-row justify-center align-middle text-color shadow-inner sm:shadow-2xl dark:shadow-neutral-700"
     >

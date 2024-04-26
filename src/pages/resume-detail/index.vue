@@ -1,15 +1,14 @@
 <template>
   <uv-loading-page
-    :loading="loading"
+    v-if="loadPage"
+    :loading="loadPage"
     loading-mode="spinner"
     loading-text="Never give up!"
     image="/static/logo.jpg"
     icon-size="100rpx"
   ></uv-loading-page>
 
-  <uv-skeletons :loading="loadingData" :skeleton="skeleton"></uv-skeletons>
-
-  <view v-if="!loading" class="resume-detail bg-slate-500 overflow-hidden">
+  <view v-else class="resume-detail bg-slate-500 overflow-hidden">
     <uv-notice-bar
       class="h-[36.5rpx]"
       text="欢迎访问我的简历项目。除了小程序您还可以在我的在线域名访问到，https://resume.fridolph.top 喜欢的话可以点个赞并收藏哦"
@@ -106,12 +105,20 @@ import Thanks from './7thanks.vue'
 import { onReady } from '@dcloudio/uni-app'
 
 /* ------- 页面初始化与加载 ------- */
-const loading = ref(true)
+const loadPage = ref<boolean>(true)
+const loadData = ref<boolean>(true)
+const skeleton = ref([
+  {
+    type: 'line',
+    num: 3,
+    gap: '20rpx',
+  },
+])
 // 模拟请求接口数据
 onReady(() => {
   setTimeout(() => {
     list.value = getList
-    loading.value = false
+    loadPage.value = false
   }, 666)
 })
 
@@ -154,7 +161,6 @@ const getList = [
     name: '致谢',
   },
 ]
-
 </script>
 
 <style lang="postcss">

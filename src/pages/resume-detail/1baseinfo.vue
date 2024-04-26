@@ -30,6 +30,8 @@
     <uv-cell title="就读时间" value="2012.9 —— 2016.7"></uv-cell>
 
   </uv-cell-group>
+
+  <uv-gap height="24rpx" bgColor="#eee" />
 </template>
 
 <script setup lang="ts"></script>
