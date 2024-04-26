@@ -1,5 +1,5 @@
 <template>
-  <view class="w-full min-h-[100vh-88rpx] dark:bg-[var(--dark-page-bg)] dark-transition">
+  <view class="w-full min-h-max dark:bg-[var(--dark-page-bg)] dark-transition">
     <view class="waterfall">
       <uv-tabs :list="tabList" @click="changeTab"></uv-tabs>
       <uv-waterfall ref="waterfall">

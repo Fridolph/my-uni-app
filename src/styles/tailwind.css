@@ -1,1 +1,25 @@
-@import '../pages/resume-detail/styles/common.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .keyword {
+    @apply text-primary;
+  }
+
+  .img-wrap {
+    @apply relative overflow-hidden;
+  }
+
+  .resume-list {
+    @apply flex flex-col gap-[16rpx] text-sm text-6;
+  }
+
+  .resume-list-title {
+    @apply my-[16rpx] text-sm font-bold;
+  }
+
+  .prj-list {
+    @apply flex flex-col p-[32rpx];
+  }
+}
