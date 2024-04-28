@@ -35,9 +35,16 @@
           <uv-album rowCount="2" :urls="urls" :multipleSize="size" space="20rpx"></uv-album>
         </view>
       </view> -->
-    </view>
-    <view class="wrap">
-      <uv-load-more loadmoreText="点击加载更多" loadingText="数据正在加载" :status="status" :line="true" @loadmore="loadMore" />
+
+      <view class="wrap">
+        <uv-load-more
+          loadmoreText="点击加载更多"
+          loadingText="数据正在加载"
+          :status="status"
+          :line="true"
+          @loadmore="loadMore"
+        />
+      </view>
     </view>
   </view>
 </template>
