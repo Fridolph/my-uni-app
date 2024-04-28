@@ -40,7 +40,8 @@
     {
       "path": "pages/hobby-game/index",
       "style": {
-        "navigationBarTitleText": "游戏世界"
+        "navigationBarTitleText": "游戏世界",
+        // "enablePullDownRefresh": true
       }
     },
     {
