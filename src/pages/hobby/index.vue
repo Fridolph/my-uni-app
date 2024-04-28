@@ -1,5 +1,5 @@
 <template>
-  <view class="w-full min-h-[100vh-88rpx] dark:bg-[var(--dark-page-bg)] dark-transition">
+  <view class="w-full min-h-max dark:bg-[var(--dark-page-bg)] dark-transition">
     <view
       class="relative sm:w-full md:w-full max-w-[1600px] flex flex-col md:flex-row justify-center align-middle text-color shadow-inner sm:shadow-2xl dark:shadow-neutral-700"
     >
@@ -19,8 +19,8 @@
           class="w-1/3"
           size="large"
           type="primary"
-          text="羽毛球"
-          @click="toDetail(HobbyEnum.badminton)"
+          text="小说"
+          @click="toDetail(HobbyEnum.novel)"
         />
       </view>
       <view class="flex justify-center">
@@ -38,12 +38,12 @@
 
 <script setup lang="ts">
 const ANIME = 'anime'
-const BADMINTON = 'badminton'
+const NOVEL = 'novel'
 const GAME = 'game'
 
 enum HobbyEnum {
   anime = ANIME,
-  badminton = BADMINTON,
+  novel = NOVEL,
   game = GAME,
 }
 

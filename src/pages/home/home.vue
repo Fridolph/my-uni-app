@@ -6,7 +6,7 @@
       <!-- 直接从 store 中访问 state -->
       <text>Current Count: {{ count }}</text>
     </view>
-    <view class="flex justify-center items-center w-full min-h-[100vh-88rpx] bg-blue-300">
+    <view class="flex justify-center items-center w-full min-h-max bg-blue-300">
       <text>Hello Tailwind CSS</text>
     </view>
     <view>

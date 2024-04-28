@@ -1,10 +1,10 @@
 <template>
   <view
-    class="waterfall w-full min-h-[calc(100vh-88rpx-24rpx)] pb-[24rpx] bg-[#f1f1f1] dark:bg-[var(--dark-page-bg)] dark-transition"
+    class="waterfall w-full min-h-fit bg-[#f1f1f1] dark:bg-[var(--dark-page-bg)] dark-transition"
   >
     <!-- tab粘性布局 -->
     <uv-sticky bgColor="#fff">
-      <uv-tabs :list="tabList" @click="changeTab">
+      <uv-tabs  :list="tabList" @change="changeTab">
         <template v-slot:right>
           <view class="pr-1" @tap="toast">
             <uv-icon name="list" size="21" bold></uv-icon>
@@ -138,7 +138,7 @@ const tabList = ref([
 async function changeTab(item: any) {
   loadData.value = true
   let { name } = item
-  // console.log(`changeTab -->`, name)
+
   if (name === TabNameEnum.love) {
     const love1 = await useListLove1()
     const love2 = await useListLove2()
