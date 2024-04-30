@@ -70,7 +70,3 @@
     </template>
   </uv-cell>
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped></style>

@@ -105,11 +105,3 @@
   </uv-cell-group>
   <uv-gap height="24rpx" bgColor="#eee" />
 </template>
-
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const str = ref<string>('hello uni-app')
-</script>
-
-<style scoped></style>

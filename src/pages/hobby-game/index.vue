@@ -25,17 +25,6 @@
         </view>
       </view>
 
-      <!-- <view class="flex gap-[32rpx] mb-[48rpx]">
-        <uv-avatar src="https://via.placeholder.com/200x200.png/2878ff"></uv-avatar>
-        <view>
-          <view class="mb-[18rpx]">
-            uv-ui
-            破釜沉舟之兼容vue3+2、app、h5、小程序等多端基于uni-app和uView2.x的生态框架，支持单独导入，开箱即用，利剑出击。
-          </view>
-          <uv-album rowCount="2" :urls="urls" :multipleSize="size" space="20rpx"></uv-album>
-        </view>
-      </view> -->
-
       <view class="wrap">
         <uv-load-more
           loadmoreText="点击加载更多"
@@ -101,7 +90,7 @@ function loadMore() {
 // })
 </script>
 
-<style lang="scss">
+<style lang="postcss">
 .my-page {
   .uni-scroll-view {
     scroll-behavior: smooth;

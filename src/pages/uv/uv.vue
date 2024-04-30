@@ -19,5 +19,3 @@ function toDetail() {
   })
 }
 </script>
-
-<style scoped></style>

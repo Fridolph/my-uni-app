@@ -33,7 +33,3 @@
 
   <uv-gap height="24rpx" bgColor="#eee" />
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped></style>

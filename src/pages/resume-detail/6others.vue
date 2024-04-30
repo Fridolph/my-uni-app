@@ -123,5 +123,3 @@ const articleList = ref<IListItem[]>([
   },
 ])
 </script>
-
-<style scoped></style>
