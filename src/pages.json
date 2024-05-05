@@ -1,104 +1,110 @@
 {
-  "pages": [
-    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "我的主页"
+			}
+		},
+		{
+			"path": "pages/ymq/ymq",
+			"style": {
+				"navigationBarTitleText": "羽你同行"
+			}
+		},
     {
-      "path": "pages/home/home",
-      "style": {
-        "navigationBarTitleText": "我的主页"
-      }
-    },
-    {
-      "path": "pages/uv/uv",
-      "style": {
-        "navigationBarTitleText": "学习 uv-ui"
-      }
-    },
-    {
-      "path": "pages/demo/demo",
-      "style": {
-        "navigationBarTitleText": "实战Demo"
-      }
-    },
-    {
-      "path": "pages/hobby/index",
-      "style": {
-        "navigationBarTitleText": "我的兴趣爱好"
-      }
-    },
-    {
-      "path": "pages/hobby-anime/index",
-      "style": {
-        "navigationBarTitleText": "推荐动漫"
-      }
-    },
-    {
-      "path": "pages/hobby-novel/index",
-      "style": {
-        "navigationBarTitleText": "笔墨人生"
-      }
-    },
-    {
-      "path": "pages/hobby-game/index",
-      "style": {
-        "navigationBarTitleText": "游戏世界",
-        // "enablePullDownRefresh": true
-      }
-    },
-    {
-      "path": "pages/resume/index",
-      "style": {
-        "navigationBarTitleText": "我的简历"
-      }
-    },
-    {
-      "path": "pages/resume-detail/index",
-      "style": {
-        "navigationBarTitleText": "简历详情"
-      }
-    }
-  ],
-  "tabBar": {
-    "color": "#7A7E83",
-    "selectedColor": "#0889cd",
-    "borderStyle": "black",
-    "backgroundColor": "#ffffff",
-    "list": [
-      {
-        "pagePath": "pages/home/home",
-        "iconPath": "static/icon/home.png",
-        "selectedIconPath": "static/icon/home-s.png",
-        "text": "主页"
-      },
-      {
-        "pagePath": "pages/uv/uv",
-        "iconPath": "static/icon/book.png",
-        "selectedIconPath": "static/icon/book-s.png",
-        "text": "UVui"
-      },
-      {
-        "pagePath": "pages/demo/demo",
-        "iconPath": "static/icon/demo.png",
-        "selectedIconPath": "static/icon/demo-s.png",
-        "text": "Demo"
-      },
-      {
-        "pagePath": "pages/hobby/index",
-        "iconPath": "static/icon/hobby.png",
-        "selectedIconPath": "static/icon/hobby-s.png",
-        "text": "兴趣"
-      },
-      {
-        "pagePath": "pages/resume/index",
-        "iconPath": "static/icon/resume.png",
-        "selectedIconPath": "static/icon/resume-s.png",
-        "text": "简历"
-      }
-    ]
-  },
-  "globalStyle": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
-  }
+			"path": "pages/ymq/ymq-video",
+			"style": {
+				"navigationBarTitleText": "我的精彩集锦"
+			}
+		}
+		{
+			"path": "pages/demo/demo",
+			"style": {
+				"navigationBarTitleText": "实战Demo"
+			}
+		},
+		{
+			"path": "pages/hobby/index",
+			"style": {
+				"navigationBarTitleText": "我的兴趣爱好"
+			}
+		},
+		{
+			"path": "pages/hobby-anime/index",
+			"style": {
+				"navigationBarTitleText": "推荐动漫"
+			}
+		},
+		{
+			"path": "pages/hobby-novel/index",
+			"style": {
+				"navigationBarTitleText": "笔墨人生"
+			}
+		},
+		{
+			"path": "pages/hobby-game/index",
+			"style": {
+				"navigationBarTitleText": "游戏世界"
+				// "enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/resume/index",
+			"style": {
+				"navigationBarTitleText": "我的简历"
+			}
+		},
+		{
+			"path": "pages/resume-detail/index",
+			"style": {
+				"navigationBarTitleText": "简历详情"
+			}
+		},
+	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#0889cd",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/icon/home.png",
+				"selectedIconPath": "static/icon/home-s.png",
+				"text": "主页"
+			},
+			{
+				"pagePath": "pages/ymq/ymq",
+				"iconPath": "static/icon/book.png",
+				"selectedIconPath": "static/icon/book-s.png",
+				"text": "羽毛球"
+			},
+			{
+				"pagePath": "pages/demo/demo",
+				"iconPath": "static/icon/demo.png",
+				"selectedIconPath": "static/icon/demo-s.png",
+				"text": "Demo"
+			},
+			{
+				"pagePath": "pages/hobby/index",
+				"iconPath": "static/icon/hobby.png",
+				"selectedIconPath": "static/icon/hobby-s.png",
+				"text": "兴趣"
+			},
+			{
+				"pagePath": "pages/resume/index",
+				"iconPath": "static/icon/resume.png",
+				"selectedIconPath": "static/icon/resume-s.png",
+				"text": "简历"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
 }
