@@ -1,54 +1,42 @@
 <template>
-  <view class="content">
-    <image class="logo" src="/static/logo.jpg" />
-    <view class="text-area">
-      <text class="title">{{ title }}</text>
-      <!-- 直接从 store 中访问 state -->
-      <text>Current Count: {{ count }}</text>
-    </view>
-    <view class="flex justify-center items-center w-full min-h-max bg-blue-300">
-      <text>Hello Tailwind CSS</text>
-    </view>
-    <view>
-      <uv-button type="primary" text="uv-ui按钮" @click="increment">add</uv-button>
+  <view class="w-full min-h-max dark:bg-[var(--dark-page-bg)] dark-transition">
+    <view
+      class="relative sm:w-full md:w-full max-w-[1600px] flex flex-col md:flex-row justify-center align-middle text-color shadow-inner sm:shadow-2xl dark:shadow-neutral-700"
+    >
+      <Avatar />
+
+      <view class="mb-4 flex justify-center">
+        <uv-button class="w-1/3" type="success" text="羽毛球" @click="toDetail('ymq/ymq')" />
+      </view>
+      <view class="mb-4 flex justify-center">
+        <uv-button class="w-1/3" type="error" text="游戏" @click="toDetail('hobby-game/index')" />
+      </view>
+      <view class="mb-4 flex justify-center">
+        <uv-button class="w-1/3" type="warning" text="动漫" @click="toDetail('hobby-anime/index')" />
+      </view>
+      <view class="mb-4 flex justify-center">
+        <uv-button class="w-1/3" type="primary" text="简历" @click="toDetail('resume-detail/index')" />
+      </view>
     </view>
   </view>
 </template>
 
 <script setup lang="ts">
-import { ref, toRefs } from 'vue'
-import { useCounterStore } from '../../stores/counter'
+const ANIME = 'anime'
+const NOVEL = 'novel'
+const GAME = 'game'
 
-const title = ref('Hello')
-const store = useCounterStore()
-const { count } = toRefs(store)
-const { increment } = store
+enum HobbyEnum {
+  anime = ANIME,
+  novel = NOVEL,
+  game = GAME,
+}
+
+function toDetail(path: string) {
+  uni.switchTab({
+    url: `/pages/${path}`,
+  })
+}
 </script>
 
-<style scoped lang="postcss">
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  .logo {
-    height: 200rpx;
-    width: 200rpx;
-    margin-top: 200rpx;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50rpx;
-  }
-
-  .text-area {
-    display: flex;
-    justify-content: center;
-  }
-
-  .title {
-    font-size: 36rpx;
-    color: #8f8f94;
-  }
-}
-</style>
+<style scoped></style>

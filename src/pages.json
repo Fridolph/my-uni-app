@@ -82,23 +82,23 @@
 				"text": "羽毛球"
 			},
 			{
-				"pagePath": "pages/demo/demo",
+				"pagePath": "pages/hobby-game/index",
 				"iconPath": "static/icon/demo.png",
 				"selectedIconPath": "static/icon/demo-s.png",
-				"text": "Demo"
+				"text": "游戏推荐"
 			},
 			{
-				"pagePath": "pages/hobby/index",
+				"pagePath": "pages/hobby-anime/index",
 				"iconPath": "static/icon/hobby.png",
 				"selectedIconPath": "static/icon/hobby-s.png",
-				"text": "兴趣"
+				"text": "推荐动漫"
 			},
 			{
-				"pagePath": "pages/resume/index",
+				"pagePath": "pages/resume-detail/index",
 				"iconPath": "static/icon/resume.png",
 				"selectedIconPath": "static/icon/resume-s.png",
-				"text": "简历"
-			}
+				"text": "我的简历"
+			},
 		]
 	},
 	"globalStyle": {
