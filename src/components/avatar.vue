@@ -2,7 +2,7 @@
   <view class="w-full flex justify-center items-center mx-auto mt-5 flex-col">
     <uv-image
       class="ring-2"
-      src="/static/resume/avatar.jpg"
+      src="https://fridolph.oss-rg-china-mainland.aliyuncs.com/my-uni-app/avatar.jpg"
       width="300rpx"
       height="300rpx"
       shape="circle"
