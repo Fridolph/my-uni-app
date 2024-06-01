@@ -62,7 +62,44 @@
 				"navigationBarTitleText": "简历详情"
 			}
 		},
+    {
+			"path": "pages/video/20240302_1",
+			"style": {
+				"navigationBarTitleText": "和老哥的单打"
+			},
+		},
+    {
+			"path": "pages/video/20240302_2",
+			"style": {
+				"navigationBarTitleText": "和路总的多拍"
+			},
+		},
+    {
+			"path": "pages/video/20240201_sen",
+			"style": {
+				"navigationBarTitleText": "再战森冠"
+			},
+		},
+    {
+			"path": "pages/video/20240106_du",
+			"style": {
+				"navigationBarTitleText": "和杜总的多拍"
+			},
+		},
+    {
+			"path": "pages/video/20240106_bin",
+			"style": {
+				"navigationBarTitleText": "和斌斌的多拍"
+			},
+		},
+    {
+			"path": "pages/video/20230714_sen",
+			"style": {
+				"navigationBarTitleText": "2023_森冠全场"
+			},
+		},
 	],
+
 	"tabBar": {
 		"color": "#7A7E83",
 		"selectedColor": "#0889cd",
